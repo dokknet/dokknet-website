@@ -248,7 +248,7 @@ const LoggedOut: React.FC<LoggedOutProps> = ({ setIsLoggedIn }) => {
   return (
     <div>
       <Alert variant="warning" className="text-center">
-        Waiting for AWS Support to lift SES sandbox and let me send login emails, please check back tomorrow to test login.
+        Please check back tomorrow to test login. We are waiting for AWS Support to lift the SES sandbox and let us send login emails.
       </Alert>
       {checkingOTPQuery ? (
         <Alert variant="primary" className="text-center">
