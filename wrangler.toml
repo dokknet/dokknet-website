@@ -1,0 +1,17 @@
+name = "website-worker-dev"
+type = "webpack"
+workers_dev = true
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
+
+[env.staging]
+workers_dev = false
+name = "website-worker-staging"
+route = "staging.dokknet.com/*"
+
+[env.production]
+workers_dev = false
+name = "website-worker-prod"
+route = "dokknet.com/*"
