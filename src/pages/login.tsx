@@ -244,12 +244,8 @@ const LoggedOut: React.FC<LoggedOutProps> = ({ setIsLoggedIn }) => {
     }
   }, [])
 
-  // TODO (abiro) remove warning once support case is resolved
   return (
     <div>
-      <Alert variant="warning" className="text-center">
-        Please check back tomorrow to test login. We are waiting for AWS Support to lift the SES sandbox and let us send login emails.
-      </Alert>
       {checkingOTPQuery ? (
         <Alert variant="primary" className="text-center">
           Checking one-time password from link...
