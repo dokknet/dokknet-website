@@ -2,11 +2,10 @@ import Auth from '@aws-amplify/auth'
 import { CognitoUser, CognitoUserSession } from 'amazon-cognito-identity-js'
 
 // TODO (abiro) move to config
-// TODO (abiro) use dokknet-api.com once DNS cache is updated
-const AUTH_API = 'https://mu6dcl77sd.execute-api.us-west-2.amazonaws.com/v1/auth'
-const CLIENT_ID = '7b3vl6j8fqgm29tvq9uhlblakq'
+const AUTH_API = 'https://api.dokknet.com/v1/auth'
+const CLIENT_ID = '5brtcftsoil3un9i8kqqasncir'
 const OTP_SESSION_TTL = 4 * 60 * 1000 // milliseconds
-const USER_POOL_ID = 'us-west-2_NSgxjlgPx'
+const USER_POOL_ID = 'us-west-2_WV6k3KSK2'
 
 Auth.configure({
   region: 'us-west-2',
@@ -24,9 +23,11 @@ interface OTPSession {
   expiresAt: number
 }
 
-async function callAuthApi(session: CognitoUserSession, method: string,
-                           path: string) {
-
+async function callAuthApi(
+  session: CognitoUserSession,
+  method: string,
+  path: string
+) {
   // TODO should use access token with custom scope, bc id token can not
   // be revoked.
   const token = session.getIdToken().getJwtToken()
@@ -172,4 +173,3 @@ export async function signOut(): Promise<void> {
   await clearAuthApiCookie(session)
   await Auth.signOut()
 }
-

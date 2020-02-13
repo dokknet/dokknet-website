@@ -15,7 +15,7 @@ const DEBUG = false
 // TODO (abiro) get domains from config
 const connectDomains = DEBUG
   ? '*'
-  : 'https://mu6dcl77sd.execute-api.us-west-2.amazonaws.com https://dokknet-api.com https://staging.dokknet-api.com https://cognito-idp.us-west-2.amazonaws.com/'
+  : 'https://api.dokknet.com https://cognito-idp.us-west-2.amazonaws.com'
 
 // Content security policy
 // Cloudflare will reject header values with new line, hence the replace.
