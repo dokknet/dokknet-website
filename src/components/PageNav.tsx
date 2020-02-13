@@ -1,7 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from '@reach/router'
 import Nav from 'react-bootstrap/Nav'
-import React, {Dispatch, SetStateAction, useEffect, useState} from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container'
 
 import { isAuthenticated, signOut } from 'api/auth'
@@ -48,7 +48,10 @@ const PageNav: React.FC<Props> = ({ isLoggedIn, setIsLoggedIn }) => {
           <Nav.Link target="_blank" href="https://dokknet-example.com/">
             Example
           </Nav.Link>
-          <Nav.Link target="_blank" href="https://github.com/dokknet/dokknet/blob/master/forking.md">
+          <Nav.Link
+            target="_blank"
+            href="https://github.com/dokknet/dokknet/blob/master/forking.md"
+          >
             Fork
           </Nav.Link>
         </Nav>

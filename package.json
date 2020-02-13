@@ -42,5 +42,10 @@
     "react-hot-loader": "^4.12.11",
     "serve": "^11.1.0",
     "typescript": "^3.5.3"
+  },
+  "prettier": {
+    "semi":  false,
+    "trailingComma":  "es5",
+    "singleQuote":  true
   }
 }
