@@ -19,10 +19,7 @@ export default () => {
           <Col className="my-auto">
             <Alert variant="primary" className="text-center my-5">
               Request beta invite for your project{' '}
-              <Alert.Link
-                target="_blank"
-                href="https://github.com/dokknet/dokknet/issues/1"
-              >
+              <Alert.Link href="https://github.com/dokknet/dokknet/issues/1">
                 here.
               </Alert.Link>
             </Alert>
@@ -58,7 +55,6 @@ export default () => {
               of a "wall". Read more about why a paywall is a good idea in{' '}
               <a
                 className="text-muted"
-                target="_blank"
                 href="https://blog.agostbiro.com/?p=2878"
               >
                 A New Open Source Business Model.
@@ -70,17 +66,12 @@ export default () => {
               for your documentation framework and adding a middleware for your
               hosting solution. There is a kill switch in the middleware, so you
               can disable the paywall any time. Check out the{' '}
-              <a
-                className="text-muted"
-                target="_blank"
-                href="https://dokknet-example.com"
-              >
+              <a className="text-muted" href="https://dokknet-example.com">
                 example integration
               </a>{' '}
               or read more about the technical details in the{' '}
               <a
                 className="text-muted"
-                target="_blank"
                 href="https://blog.agostbiro.com/?p=2904"
               >
                 paywall design.
@@ -98,7 +89,6 @@ export default () => {
               You can request a beta invite for your project{' '}
               <a
                 className="text-muted"
-                target="_blank"
                 href="https://github.com/dokknet/dokknet/issues/1"
               >
                 here.
@@ -109,7 +99,6 @@ export default () => {
               Dokknet is a{' '}
               <a
                 className="text-muted"
-                target="_blank"
                 href="https://blog.agostbiro.com/?p=2901"
               >
                 forkable company.
@@ -117,7 +106,6 @@ export default () => {
               You can find forking instructions{' '}
               <a
                 className="text-muted"
-                target="_blank"
                 href="https://github.com/dokknet/dokknet/blob/master/forking.md"
               >
                 here.

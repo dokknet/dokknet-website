@@ -45,13 +45,8 @@ const PageNav: React.FC<Props> = ({ isLoggedIn, setIsLoggedIn }) => {
           Dokknet
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link target="_blank" href="https://dokknet-example.com/">
-            Example
-          </Nav.Link>
-          <Nav.Link
-            target="_blank"
-            href="https://github.com/dokknet/dokknet/blob/master/forking.md"
-          >
+          <Nav.Link href="https://dokknet-example.com/">Example</Nav.Link>
+          <Nav.Link href="https://github.com/dokknet/dokknet/blob/master/forking.md">
             Fork
           </Nav.Link>
         </Nav>
