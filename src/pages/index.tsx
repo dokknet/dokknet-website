@@ -99,7 +99,7 @@ export default () => {
               Dokknet is a{' '}
               <a
                 className="text-muted"
-                href="https://blog.agostbiro.com/?p=2901"
+                href="https://blog.agostbiro.com/2020/01/a-forkable-company/"
               >
                 forkable company.
               </a>{' '}
